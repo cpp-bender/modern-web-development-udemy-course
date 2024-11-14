@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Selectors</title>
+  </head>
+  <style>
+    /*
+    Choose all h1s and ps
+    h1,p{
+        color: red;
+        background: blue;
+    }
+    */
+
+    /* Choose by ID 
+    #logo{
+        color: black;
+    }
+    */
+
+    /*
+    choose by class
+    p{
+        color: red;
+    }
+
+    .info{
+        color: black;
+    }
+    */
+
+    /* #logo, .lead{
+        color: red;
+        background: blue;
+    } */
+
+    /*
+    choose whose id is para1 and whose class is lead 
+    #para1.lead{
+        color: red;
+        background: blue;
+    } */
+
+    /* a{
+        color: red;
+        text-decoration: none;
+    } */
+
+    /* Choose a tags inside li tags inside ul tag
+    ul li a{
+        color: red;
+    } */
+
+    /* Choose info class whose has span tag
+    .info span{
+        color: red;
+    } */
+
+    /* .info .primary{
+        color: red;
+    } */
+
+    /* choose all elements
+    *{
+        color: red;
+        font-size: 30px;
+    } */
+
+  </style>
+  <body>
+    <header>
+      <h1>Header 1</h1>
+      <h1 id="logo">Logo</h1>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, alias!
+    </p>
+    <p class="info">
+      Lorem, ipsum <span class="primary">dolor</span> sit amet consectetur
+      adipisicing elit. Quasi sapiente voluptas vero.
+    </p>
+    <p class="info">Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Ratione, exercitationem nihil rerum asperiores in, maxime rem vel dolores magnam at suscipit!</p>
+    <p>Test paragraph</p>
+    <a href="#">Home</a>
+  </body>
+</html>

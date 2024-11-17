@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Child Selector</title>
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+        /* p:first-child{
+            background: blue;
+        }
+        p:last-child{
+            background: blue;
+        }
+        p:nth-child(1){
+            color: red;
+        }
+        p:nth-child(3){
+            color: blue;
+        } */
+         /* p:nth-child(even){
+            color: red;
+         }
+         p:nth-child(odd){
+            color: blue;
+         } */
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        /*n=0 b=0 , 0 ,    */
+        ul li:nth-child(2n+1){
+            color: red;
+        }
+
+        ul li:nth-child(n+4){
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div> -->
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+
+
+
+
+
+</body>
+</html>

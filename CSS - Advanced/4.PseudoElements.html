@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        /* .para1::first-line{
+            color: red;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 50px;
+        } */
+         .para1::after{
+            /* content: "Paragraph ending."; */
+            content: url("../logo.jpg");
+         }
+         .para1::before{
+            content: "Paragraph before";
+         }
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, consequuntur iste reprehenderit assumenda ducimus nostrum nulla at dolore, placeat illo fugiat sed quam minima explicabo reiciendis beatae! Ipsam fuga sapiente fugit saepe nemo voluptas, iste amet voluptate ratione maiores optio quia quas necessitatibus itaque eius temporibus odio laudantium quis, asperiores consequuntur? Debitis maxime voluptatibus qui, ad magnam a blanditiis dolorem aut quisquam dolor nostrum veniam nemo! Aspernatur rem mollitia quo fugit, aliquid ducimus, dicta vel iusto similique voluptatum nesciunt repudiandae maxime labore id impedit facilis ea reprehenderit numquam porro molestias? Nulla labore itaque, ex quas expedita doloribus maxime doloremque error.</p>
+</body>
+</html>

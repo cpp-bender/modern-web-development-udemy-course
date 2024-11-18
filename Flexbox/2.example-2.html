@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="cppbender">
+    <title>CSS - Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contanier{
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            min-height: 600px;
+            background: black;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            border: 5px solid red;
+        }
+        .box{
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box-1{
+            order: 3;
+            background: red ;
+            flex-grow: 2.5;
+        }
+        .box-2{
+            order: 2;
+            background: green;
+            flex-grow: 2.5;
+        }
+        .box-3{
+            order: 1;
+            background: blue;
+            align-self: flex-start;
+            flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+</body>
+</html>

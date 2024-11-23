@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="cppbender" />
+    <title>CSS Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <ul class="nav nav-pills justify-content-center border-bottom">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">Electronic</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Art</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Books</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Language</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">English</a>
+          <a href="#" class="dropdown-item">Turkish</a>
+          <a href="#" class="dropdown-item">Russian</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="d-flex justify-content-between align-items-center dropdown-item">
+            Exit
+            <span class="badge badge-primary">10</span>
+            </a>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

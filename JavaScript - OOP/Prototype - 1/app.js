@@ -6,9 +6,12 @@ console.log(object);
 function Employee(name, age) {
   this.name = name;
   this.age = age;
-  this.showInfos = () => console.log("showing infos");
   this.toString = () => console.log("emplooye object");
 }
 
+Employee.prototype.showInfos = function(){
+  console.log(this.name, this.age);
+};
+
 const emp1 = new Employee("ahmet", 25);
-console.log(emp1.toString());
+emp1.showInfos();

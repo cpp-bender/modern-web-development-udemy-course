@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Ahmet Altioglu",
+        "department": "IT",
+        "salary": 3500
+    },
+    {
+        "name": "Ali Kasap",
+        "department": "HR",
+        "salary": 1500
+    },
+    {
+        "name": "Mehmet Uçan",
+        "department": "GSP",
+        "salary": 4500
+    }
+]

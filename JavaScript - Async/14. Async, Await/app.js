@@ -13,8 +13,8 @@ class Request {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    const data = await response.json();
-    return data;
+    const res = await response.json();
+    return res;
   }
 
   async put(url, data) {
@@ -25,15 +25,14 @@ class Request {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    const data = await response.json();
-    return data;
+    const res = await response.json();
+    return res;
   }
 
   async delete(url) {
     const response = fetch(url, {
       method: "DELETE",
     });
-
     return "Deleted";
   }
 }

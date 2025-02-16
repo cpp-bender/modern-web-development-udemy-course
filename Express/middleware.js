@@ -1,5 +1,5 @@
 const control = (req, res, next) => {
-  const access = false;
+  const access = true;
   if (!access) {
     res.status(401).json({
       success: false,
